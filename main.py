@@ -26,7 +26,7 @@ async def on_command_error(ctx, error):
   elif isinstance(error, commands.MissingPermissions):
     await ctx.send('You do not have the permission to do that.')
   else: # Erreurs non supporté pour le moment
-    await ctx.send('Word not  found....')
+    await ctx.send('Word not found....')
 
 @client.group(invoke_without_command=True, case_insensitive = True)
 async def help(ctx): # Custom Help command
